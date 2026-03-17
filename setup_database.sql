@@ -4,8 +4,7 @@
 --   mysql -u root -p < setup_database.sql
 -- ============================================================
 
-CREATE DATABASE IF NOT EXISTS bloom_petal;
-USE bloom_petal;
+
 
 -- -----------------------------------------------
 -- USERS
@@ -158,7 +157,7 @@ CREATE TABLE IF NOT EXISTS blog_posts (
     excerpt    TEXT,
     body       LONGTEXT,
     tag        VARCHAR(100),
-    author     VARCHAR(100) DEFAULT 'Milda's Roses',
+    author     VARCHAR(100) DEFAULT 'Milda\'s Roses',
     image_path VARCHAR(500),
     published  TINYINT(1) DEFAULT 1,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
